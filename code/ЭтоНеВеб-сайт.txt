@@ -1,0 +1,22 @@
+<html>
+<head> <ul style="text-align: center;"> <h1> Это не Веб-сайт </h1> </ul> </head>
+<body> <li> Это находится на вашем персональном копьюторе </li> <li> Наверника вы об этом не знали </li> <li> Скорее всего вы нашли это на рабочим столе </li>
+  <p> Нажмите на кнопку чтобы узнать подробнее об этом файле </p>
+  <ul> <a href="https://www.yyyyyyy.info/"> <button> <td> Перейти </td> </button> </a> </ul>
+  <img style="width: 201px;" src="https://forum.il2sturmovik.ru/uploads/monthly_2021_06/IMG_20210624_021052.jpg.9a71a4c14f3c608658157cda972a8d3a.jpg"></img>  <img style="width: 201px;" src="https://forum.il2sturmovik.ru/uploads/monthly_2021_06/IMG_20210624_021052.jpg.9a71a4c14f3c608658157cda972a8d3a.jpg"></img>  <img style="width: 201px;" src="https://forum.il2sturmovik.ru/uploads/monthly_2021_06/IMG_20210624_021052.jpg.9a71a4c14f3c608658157cda972a8d3a.jpg"></img>  <img style="width: 200px;" src="https://forum.il2sturmovik.ru/uploads/monthly_2021_06/IMG_20210624_021052.jpg.9a71a4c14f3c608658157cda972a8d3a.jpg"></img>  <img style="width: 200px;" src="https://forum.il2sturmovik.ru/uploads/monthly_2021_06/IMG_20210624_021052.jpg.9a71a4c14f3c608658157cda972a8d3a.jpg"></img>  <img style="width: 200px;" src="https://forum.il2sturmovik.ru/uploads/monthly_2021_06/IMG_20210624_021052.jpg.9a71a4c14f3c608658157cda972a8d3a.jpg"></img>  <img style="width: 201px;" src="https://forum.il2sturmovik.ru/uploads/monthly_2021_06/IMG_20210624_021052.jpg.9a71a4c14f3c608658157cda972a8d3a.jpg"></img>  <img style="width: 201px;" src="https://forum.il2sturmovik.ru/uploads/monthly_2021_06/IMG_20210624_021052.jpg.9a71a4c14f3c608658157cda972a8d3a.jpg"></img>  <img style="width: 201px;" src="https://forum.il2sturmovik.ru/uploads/monthly_2021_06/IMG_20210624_021052.jpg.9a71a4c14f3c608658157cda972a8d3a.jpg"></img>  
+  <hr>
+  <ul style="text-align: center;"> <a href="https://973-eht-namuh-973.com/"> <button>  <h2>Принять</h2>  </button> </a> </ul> <ul style="text-align: center;"> <a href="https://mcserv2847.github.io/"> <button>  <h2>Отказаться</h2>  </button> </a> </ul> 
+  <hr>
+  
+  <ul style="text-align: center;"> <iframe 
+    width="720"
+    height="405"
+    src="https://rutube.ru/play/embed/acf6e4291e3ba02129024f4b8ec490fe"
+    frameBorder="100"
+    allow="clipboard-write; play"
+    webkitAllowFullScreen
+    mozallowfullscreen
+    allowFullScreen
+  ></iframe> </ul>
+  <hr>
+  </html>

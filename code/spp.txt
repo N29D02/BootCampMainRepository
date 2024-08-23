@@ -1,0 +1,332 @@
+#include <cmath>   // Добавляем заголовок для pow()
+#include <iomanip> // для манипулятора setprecision
+#include <iostream>
+#include <limits> // For numeric_limits
+#include <string> 
+using namespace std;
+
+/*//Переменные
+int main() {
+  string name;
+  cout << "Как тебя зовут? ";
+  getline(cin, name);
+  cout << "Привет, " << name << "!" << endl;
+  // 2
+  int num1, num2, product;
+  cout << "Введите первое число: ";
+  cin >> num1;
+  cout << "Введите второе число: ";
+  cin >> num2;
+  product = num1 * num2;
+  cout << "Произведение чисел: " << product << endl;
+  // 3
+  double length, width, perimeter;
+  cout << "Введите длину прямоугольника: ";
+  if (!(cin >> length)) {
+    cout << "Неверный ввод. Пожалуйста, введите число." << endl;
+    cin.clear(); // Clear error state
+    cin.ignore(numeric_limits<streamsize>::max(),
+               '\n'); // Discard invalid input
+    return 1;         // Indicate an error
+  }
+  cout << "Введите ширину прямоугольника: ";
+  if (!(cin >> width)) {
+    cout << "Неверный ввод. Пожалуйста, введите число." << endl;
+    cin.clear();
+    cin.ignore(numeric_limits<streamsize>::max(), '\n');
+    return 1;
+  }
+  perimeter = 2 * (length + width);
+  cout << "Периметр прямоугольника: " << perimeter << endl;
+  // 4
+  double kilometers;
+  cout << "Введите количество километров: ";
+  cin >> kilometers;
+  double miles = kilometers * 0.621371;
+  if (!(cin >> kilometers)) {
+    cout << "Неверный ввод. Пожалуйста, введите число." << endl;
+    return 1;
+  }
+  cout << fixed << setprecision(2); // Округляем до двух знаков после запятой
+  cout << kilometers << " километров равно " << miles << " милям." << endl;
+  // 5
+  int age;
+  cout << "Введите ваш возраст: ";
+  cin >> age;
+  cout << "Через 5 лет вам будет " << age + 5 << " лет." << endl;
+  // 6
+  double num3, num4, num5, average;
+  cout << "Введите первое число: ";
+  cin >> num3;
+  cout << "Введите второе число: ";
+  cin >> num4;
+  cout << "Введите третье число: ";
+  cin >> num5;
+  average = (num3 + num4 + num5) / 3;
+  if (!(cin >> num3) || !(cin >> num4) || !(cin >> num5)) { 
+    cout << "Неверный ввод. Пожалуйста, введите число." << endl;
+    return 1;
+  }
+  cout << "Среднее арифметическое: " << average << endl;
+  // 8
+  double side, area;
+  cout << "Введите длину стороны квадрата: ";
+  if (!(cin >> side)) {
+    cout << "Неверный ввод. Пожалуйста, введите число." << endl;
+    cin.clear(); // Clear error state
+    cin.ignore(numeric_limits<streamsize>::max(),
+               '\n'); // Discard invalid input
+    return 1;         // Indicate an error
+  }
+  area = side * side;
+  cout << "Площадь квадрата: " << area << endl;
+  // 9
+  double rebro, volume;
+  cout << "Введите длину ребра куба: ";
+  cin >> rebro;
+  volume = pow(rebro, 3); // Используем функцию pow() для возведения в степень
+  cout << "Объём куба: " << volume << endl;
+  // 10
+  {
+    double number, volume;
+    cout << "Введите число: ";
+    if (!(cin >> number)) {
+      cout << "Неверный ввод. Пожалуйста, введите число." << endl;
+      return 1;
+    }
+    volume = pow(number, 3);
+    cout << "Куб числа " << volume << endl;
+    return 0;
+  }
+}
+//Условия
+int main() {
+  //1
+  int chislo;
+  cin >> chislo;
+  if (chislo == 0) {
+    cout << "Zero" << endl;
+  }
+  else {
+  if (chislo % 2 > 0) {
+    cout << "Число положительное" << endl;
+  }
+  else {
+    cout << "Число отрицательное" << endl;
+  }
+  }
+  //2 
+  using namespace std;
+
+  
+      string input;
+
+      cout << "Введите строку: ";
+      getline(cin, input); // Считываем строку целиком, включая пробелы
+
+      // Проверяем, является ли строка пустой
+      if (input.empty()) {
+          cout << "Строка пустая." << endl;
+      } else {
+          cout << "Строка не пустая." << endl;
+      }
+
+      return 0;
+  //3
+  double x, y;
+      cout << "Введите координаты (x, y): ";
+      cin >> x >> y;
+
+      if (x > 0 && y > 0) {
+          cout << "Точка находится в первой четверти." << endl;
+      } else if (x < 0 && y > 0) {
+          cout << "Точка находится во второй четверти." << endl;
+      } else if (x < 0 && y < 0) {
+          cout << "Точка находится в третьей четверти." << endl;
+      } else if (x > 0 && y < 0) {
+          cout << "Точка находится в четвертой четверти." << endl;
+      } else {
+          cout << "Точка находится на одной из осей." << endl;
+      }
+  
+
+  //5
+  int a, b;
+  cout << "Введите два числа: ";
+  cin >> a >> b;
+
+  if (a == b) {
+      cout << "Числа равны." << endl;
+  } else {
+      cout << "Числа не равны." << endl;
+  }
+  //6
+  
+      double num1, num2, num3;
+
+      cout << "Введите первое число: ";
+      cin >> num1;
+      cout << "Введите второе число: ";
+      cin >> num2;
+      cout << "Введите третье число: ";
+      cin >> num3;
+
+      double maxNum = num1; // Предположим, что первое число наибольшее
+
+      // Сравниваем с вторым числом
+      if (num2 > maxNum) {
+          maxNum = num2;
+      }
+
+      // Сравниваем с третьим числом
+      if (num3 > maxNum) {
+          maxNum = num3;
+      }
+
+      cout << "Наибольшее число: " << maxNum << endl;
+
+      return 0;
+
+  //7
+  float number;  
+  cout << "Введите число: ";
+  cin >> number;
+
+  if (number >= 1 && number <= 100)
+  {
+    cout << "Число входит в диапазон от 1 до 100." << endl
+  } else {
+    cout << "Число не входит в диапазон от 1 до 100." << endl;"
+  }
+  //8
+  string responsez;
+  if (response == "yes" || response == "no"){
+    cout << "Вы ответили: " << response << endl;
+  } else {
+    cout << "Неверный ввод. Пожалуйста, введите 'yes' или 'no'." << endl;
+  }
+  //9
+  float a, b, c;
+  cout << "Введите длину первой стороны: ";
+  cin >> a;
+  cout << "Введите длину второй стороны: ";
+  cin >> b;
+  cout << "Введите длину третьей стороны: ";
+  cin >> c;
+  if (a + b > c && a + c > b && b + c > a) {
+    cout << "Треугольник с заданными сторонами возможен." << endl;
+  } else {
+    cout << "Треугольник с заданными сторонами невозможен." << endl;
+  }
+  //10
+  int year;
+  cout << "Введите год: ";
+  cin >> year;
+  if (year % 4 == 0 && year % 100 != 0 || year % 400 == 0)
+    cout << year << " - високосный год." << endl;
+  
+} //Желательно использовать по отдельности через  */
+//Циклы
+ int main() {
+   //1
+  std::cout << "Чётные числа от 1 до 20:\n";
+
+    for (int i = 1; i <= 20; ++i) {
+        if (i % 2 == 0) {
+            std::cout << i << " ";
+        }
+    }
+
+    std::cout << std::endl; // Для переноса строки после вывода
+
+  //2
+  
+  int sum = 0;
+    for (int j = 1; j <= 100; ++j) 
+      sum += j;
+  std::cout << "Сумма чисел от 1 до 100: " << sum <<std::endl;
+  //3
+  for (int i=10; i>=1; --i){
+  std::cout << i <<std::endl;
+    }
+
+  //4
+  int sum0 = 0;
+
+  for (int i = 1; i <= 50; i++) {
+      if (i % 2 != 0) {
+        sum0 += i;
+        std::cout  << sum0 << std::endl;
+      }
+  }
+  //5
+      int number = 5;
+
+      // Вывод заголовка
+      std::cout << "Таблица умножения для " << number << ":\n";
+
+      // Цикл для вычисления и вывода
+      for (int i = 1; i <= 10; i++) {
+          int result = number * i;
+          std::cout << number << " x " << i << " = " << result << "\n";
+      }
+  //6  
+      int n;
+      std::cout << "Введите число: ";
+      std::cin >> n;
+      long long factoriall = 1;
+  for (int i=1; i<=n; i++){
+    factoriall *= i;
+  }
+  std::cout << "Факториал числа " << n << " равен " << factoriall << std::endl;
+  //7
+  int n1;
+  std::cout << "Введите число: ";
+  cin >>n1;
+  int a = 0, b = 1;
+  cout << "Последовательность Фибоначчи до " << n << ": "; for (int i = 0; i < n; i++) {
+    cout << a << " ";
+    int next = a + b;
+    b = next;
+  }
+  cout << endl;
+  //8
+  int chislo;
+  std::cout << "Введите число: ";
+  std::cin >> chislo;
+  for (int i=1; i<=chislo; i++) {
+    if (chislo % i == 0)
+      cout << i << " ";
+  }
+  cout << endl;
+  //9
+  string input;
+  cout << "Введите строку: ";
+  getline(cin, input);
+  string reversed(input.rbegin(), input.rend());
+  cout << "Перевернутая строка: " << reversed << endl;
+  //10
+  
+      cout << "Введите строку: ";
+      getline(cin, input);
+      int spaceCount = 0;
+      for (char c : input) {
+          if (c == ' ') {
+              spaceCount++;
+          }
+      }
+
+      cout << "Количество пробелов: " << spaceCount << endl;
+      return 0;
+} 
+//Строки
+int main() {
+   //1
+  std::string user_input;
+  std::cout << "Введите строку: ";
+  std::getline(std::cin, user_input);
+  size_t length_of_string = user_input.length();
+  std::cout << "Длина строки: " << length_of_string << std::endl;
+  //2
+  
+}
